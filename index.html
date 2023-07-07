@@ -1,0 +1,269 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina con scrollbar</title>
+    <link rel="stylesheet" type="text/css" href="../statik/css/estilos.css">> 
+    <link href="https://fonts.cdnfonts.com/css/purple-smile" rel="stylesheet">
+                
+       <style>
+        
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Purple_Smile';
+    
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+background: linear-gradient(#2b1055,#7597de);
+
+}
+header
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 30px 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 10000;
+}
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase ;
+    letter-spacing: 2px;
+}
+header ul
+{
+    display:flex;
+    justify-content:center ;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px ;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover ,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522, transparent);
+    z-index: 1000;
+}
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#moon
+{
+    mix-blend-mode: screen;
+}
+section img#mountains_front
+{
+    z-index: 10;
+}
+#text
+{
+    position: absolute;
+    right: -350px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+    
+}
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em ;
+    z-index: 9;
+    transform: translateY(100px);
+}
+.sec
+{
+    position: relative;
+    padding: 100px ;
+    background-color: #1c0522;
+}
+.sec h2
+{
+   font-size: 3.5em;
+   margin-bottom: 10px;
+   color: #fff; 
+}
+.sec p
+{
+    font-size: 1.2em;
+   color: #fff; 
+}
+       </style>         
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">logo</a>
+        <ul>
+            <li><a href="#" class="active">inicio</a></li>
+            <li><a href="#">acerca de</a></li>
+            <li><a href="#">trabajo</a></li>
+            <li><a href="#">contacto</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">moon light</h2>
+        <a href="#sec" id="btn">Explorar</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Fanatica de lo sensual</h2>
+        <p>Es fanática de lo sensual
+            Ella tiene una foto mía
+            Y ya me la puedo imaginar
+            Lo que hace cuando esta sólita
+            Pero yo le voy a preguntar
+            Y a escuchar su voz cuando se agita
+            Por su manera de respirar
+            Puedo imaginarme lo que estas haciendo
+            Si le hablo malo se pone intranquila
+            Pasa su mano por todo su cuerpo
+            Cuando le digo todo lo que le haría
+            Puedo imaginarme lo que esta haciendo <br>Y eso que solo es una foto mía
+            Que pasara cuando nos encontremos
+            De seguro que se lo explicaría Cada vez que hablamos me dice que quieres verme
+            Loca por conocerme, solo piensa en ese día
+            Ver mi fotografía es lo que le daña la mente
+            Con el cuerpo que tiene, dime quien no le daría
+            Llama de madrugada, tan caliente como siempre
+            Me habla de una manera, que ni yo me atrevería
+            Veremos lo que pasa cuando me tenga de frente
+            Es que al igual que ella, también pienso en ese día
+            Es fanática de lo sensual
+            Ella tiene una foto mía
+            Y ya me la puedo imaginar
+            Lo que hace cuando esta sólita
+            Pero yo le voy a preguntar
+            Y a escuchar su voz cuando se agita
+            Por su manera de respirar
+            Puedo imaginarme lo que estas haciendo
+            Si le hablo malo se pone intranquila
+            Pasa su mano por todo su cuerpo
+            Cuando le digo todo lo que le haría
+            Puedo imaginarme lo que esta haciendo
+            Y eso que solo es una foto mía
+            Que pasara cuando nos encontremos
+            De seguro que se lo explicaría 
+            Noto que le gusto cuando ella me llama
+            Cuando me habla de travesuras en la cama
+            Pone voz de deseo, hasta me echa fiero
+            Que su fantasía, era cumplir la mía
+            Poco a poco relata, lo que le pasa en su casa
+            Debajo, de sus sabana escondida
+            De como lo prefería, con pregunta insistía
+            Hasta que en su juego me envolvía
+            Es fanática de lo sensual
+            Ella tiene una foto mía
+            Y ya me la puedo imaginar
+            Lo que hace cuando esta sólita<br></p>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value =window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+</body>
+</html>
